@@ -23,10 +23,12 @@ export default function StudentView() {
       <Header />
       {status === "Loading" && <p>Loading... </p>}
       {error && <p>{error} </p>}
-      <h1>Student View </h1>
-      <Link to="/addStudent">Add Student </Link>
+      <h1 className="mx-3">Student View </h1>
+      <div className="mx-3">
+        <Link to="/addStudent">Add Student </Link>
 
-      <StudentList students={students} />
+        <StudentList students={students} />
+      </div>
     </div>
-  );
+  )
 }
